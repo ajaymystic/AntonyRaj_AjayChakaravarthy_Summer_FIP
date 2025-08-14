@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SqueezeIt — Contact</title>
+  <link rel="preload" href="fonts/rockwell-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/rockwell-std-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/arial-rounded-mt-w02-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page-contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="main-header">
+    <div class="grid-con" id="nav-con">
+      <div class="col-span-2 m-col-span-3 l-col-span-3" id="logo">
+        <a href="index.html" class="brand">
+          <img src="images/black-logo-trans.svg" alt="SqueezeIt logo" />
+        </a>
+      </div>
+
+      <nav class="col-span-2 m-col-span-9 l-col-span-9 main-nav" id="main-nav" aria-label="Primary">
+        <button class="nav-toggle burger" id="nav-toggle"
+          aria-label="Open menu" aria-controls="navMenu" aria-expanded="false" type="button">
+          <span class="burger-line burger-line--top"></span>
+          <span class="burger-line burger-line--mid"></span>
+          <span class="burger-line burger-line--bot"></span>
+        </button>
+        <ul id="navMenu" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a class="is-active" href="contact.html">Contact us</a></li>
+          <li><a href="products.html">Where to Buy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== CONTACT ===== -->
+    <section class="section-contact" id="contact">
+      <div class="grid-con">
+
+        <!-- Title -->
+        <div class="col-span-full">
+          <h1 class="contact-title">Contact Us</h1>
+        </div>
+
+        <!-- Blue Slab: Form -->
+        <div class="col-span-full contact-slab">
+          <div class="grid-con">
+            <form class="col-span-full contact-form" novalidate>
+              <div class="form-grid">
+                <label>
+                  <span class="label">Name*</span>
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+
+                <label>
+                  <span class="label">Email*</span>
+                  <input type="email" name="email" placeholder="you@example.com" required />
+                </label>
+
+                <label>
+                  <span class="label">Telephone no.</span>
+                  <input type="tel" name="phone" placeholder="+1 (___) ___-____" />
+                </label>
+
+                <label>
+                  <span class="label">Subject</span>
+                  <span class="select-wrap">
+                    <select name="subject" required>
+                      <option value="" selected disabled>Select a subject</option>
+                      <option>General Inquiry</option>
+                      <option>Wholesale</option>
+                      <option>Partnerships</option>
+                      <option>Support</option>
+                    </select>
+                  </span>
+                </label>
+
+                <label class="col-span-full">
+                  <span class="label">Message*</span>
+                  <textarea name="message" rows="6" placeholder="How can we help?" required></textarea>
+                </label>
+
+                <!-- Submit -->
+                <div class="col-span-full form-actions">
+                  <button class="btn btn-outline" type="submit">SUBMIT</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Brand Contact Info -->
+        <aside class="col-span-full brand-info" aria-label="Brand Contact Info">
+          <h2 class="brand-info-title">Brand Contact Info</h2>
+          <div class="brand-info-card">
+            <ul class="contact-list">
+              <li><strong>Email:</strong> hello@squeezeit.com</li>
+              <li><strong>Phone:</strong> +1 (XXX) XXX-XXXX</li>
+              <li><strong>Address:</strong> 123 Squeeze Street, Flavor Town, Canada</li>
+              <li><strong>Working Hours:</strong> Mon–Fri, 9:00 AM – 5:00 PM EST</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer site-footer--bar" id="main-footer">
+    <div class="footer-row footer-top">
+      <div class="footer-logo">SQUEEZIT</div>
+      <div class="footer-socials">
+        <img src="images/youtube.svg" alt="YouTube">
+        <img src="images/x.svg" alt="X">
+        <img src="images/facebook.svg" alt="Facebook">
+        <img src="images/instagram.svg" alt="Instagram">
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-row footer-links-wrapper">
+      <div class="footer-info-links">
+        <a href="#">About Squeezeit</a>
+        <a href="#">Contact Info</a>
+      </div>
+      <div class="footer-nav-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html">Products</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Squeezit. All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
