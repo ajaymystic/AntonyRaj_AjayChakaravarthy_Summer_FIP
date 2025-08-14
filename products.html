@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SqueezeIt — Products</title>
+  <link rel="preload" href="fonts/rockwell-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/rockwell-std-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/arial-rounded-mt-w02-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page-product">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="main-header">
+    <div class="grid-con" id="nav-con">
+      <div class="col-span-2 m-col-span-3 l-col-span-3" id="logo">
+        <a href="index.html" class="brand">
+          <img src="images/black-logo-trans.svg" alt="SqueezeIt logo" />
+        </a>
+      </div>
+
+      <nav class="col-span-2 m-col-span-9 l-col-span-9 main-nav" id="main-nav" aria-label="Primary">
+        <button class="nav-toggle burger" id="nav-toggle"
+          aria-label="Open menu" aria-controls="navMenu" aria-expanded="false" type="button">
+          <span class="burger-line burger-line--top"></span>
+          <span class="burger-line burger-line--mid"></span>
+          <span class="burger-line burger-line--bot"></span>
+        </button>
+        <ul id="navMenu" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a class="is-active" href="products.html">Where to Buy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="section-hero section-hero--product" id="product-hero">
+      <div class="grid-con hero-product-grid">
+
+        <!-- Left: Tall Can -->
+        <figure class="col-span-4 m-col-span-6 l-col-span-6 product-hero-main">
+          <picture>
+            <source srcset="images/sq-tablet-product-hero.jpg" media="(max-width: 767px)">
+            <source srcset="images/sq-tablet-product-hero.jpg" media="(max-width: 1199px)">
+            <img src="images/sq-orange-product-hero.jpg" alt="Orange Rush — tall can">
+          </picture>
+        </figure>
+
+        <!-- Right: Side Image + Nutrition (tablet/desktop only) -->
+        <div class="col-span-4 m-col-span-6 l-col-span-6 product-hero-side only-md-up">
+          <figure class="product-thumb">
+            <picture>
+              <source srcset="images/sq-tablet-product-hero-side.jpg" media="(max-width: 1199px)">
+              <img src="images/sq-orange-product-hero-side.jpg" alt="Orange Rush — two cans">
+            </picture>
+          </figure>
+
+          <figure class="product-thumb product-thumb--nutrition">
+            <img src="images/table.svg" alt="Nutrition Facts for Orange Rush">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PRODUCT COPY ===== -->
+    <section class="section-product" id="product-body">
+
+      <!-- Orange Rush Intro -->
+      <div class="grid-con copy-slab">
+        <div class="col-span-full product-copy">
+          <h2 class="product-title">🍊 Orange Rush</h2>
+          <p class="product-kicker">
+            "Bold citrus energy in every gulp." Packed with juicy orange flavour and a burst of
+            brightness to kick-start your day or power up your game night.
+          </p>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="grid-con copy-slab">
+        <div class="col-span-full product-copy">
+          <h3 class="subhead">Product Description</h3>
+          <p class="product-desc">
+            "A citrus adventure in every can." Orange Rush is your ticket to an instant burst of
+            sunshine. Packed with the sweet tang of perfectly ripened oranges, this flavour blends
+            bright citrus notes with a smooth, refreshing fizz for the ultimate thirst-quencher. The
+            bold orange hue isn’t just eye-catching — it’s a promise of energy, excitement, and fun in
+            every sip. Whether you’re kicking back with friends, powering through a busy day, or
+            celebrating a weekend win, Orange Rush delivers that zesty lift you didn’t know you needed.
+            Served chilled, it’s like holding summer in your hands.
+          </p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="grid-con copy-cta">
+        <div class="col-span-full buy-cta buy-cta--below">
+          <button class="btn btn-primary" type="button">Add to Basket</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer site-footer--bar" id="main-footer">
+    <div class="footer-row footer-top">
+      <div class="footer-logo">SQUEEZIT</div>
+      <div class="footer-socials">
+        <img src="images/youtube.svg" alt="YouTube">
+        <img src="images/x.svg" alt="X">
+        <img src="images/facebook.svg" alt="Facebook">
+        <img src="images/instagram.svg" alt="Instagram">
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-row footer-links-wrapper">
+      <div class="footer-info-links">
+        <a href="#">About Squeezeit</a>
+        <a href="#">Contact Info</a>
+      </div>
+      <div class="footer-nav-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html">Products</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Squeezit. All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

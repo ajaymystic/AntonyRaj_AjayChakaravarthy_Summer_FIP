@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SqueezeIt — Home</title>
+  <link rel="preload" href="fonts/rockwell-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/rockwell-std-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/arial-rounded-mt-w02-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="main-header">
+    <div class="grid-con" id="nav-con">
+      <div class="col-span-2 m-col-span-3 l-col-span-3" id="logo">
+        <a href="index.html" class="brand">
+          <img src="images/black-logo-trans.svg" alt="SqueezeIt logo" />
+        </a>
+      </div>
+      <h1 class="hidden">Main Nav</h1>
+      <nav class="col-span-2 m-col-span-9 l-col-span-9 main-nav" id="main-nav" aria-label="Primary">
+        <button class="nav-toggle burger" id="nav-toggle"
+          aria-label="Open menu" aria-controls="navMenu" aria-expanded="false" type="button">
+          <span class="burger-line burger-line--top"></span>
+          <span class="burger-line burger-line--mid"></span>
+          <span class="burger-line burger-line--bot"></span>
+        </button>
+        <ul id="navMenu" class="nav-list">
+          <li><a class="is-active" href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="products.html">Where to Buy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO: THREE TALL PANELS ===== -->
+    <section class="section-hero section-hero--gallery" id="hero-gallery">
+      <h2 class="hidden">Main content</h2>
+      <div class="grid-con hero-grid">
+        <!-- Left -->
+        <figure class="col-span-4 m-col-span-4 l-col-span-4 hero-card" id="hero-card-left">
+          <picture>
+            <source srcset="images/sq-mobile-home-hero.jpg" media="(max-width: 767px)">
+            <source srcset="images/sq-tablet-strawberry-hero.jpg" media="(max-width: 1199px)">
+            <img src="images/sq-strawberry-hero.jpg" alt="SqueezeIt Strawberry Sizzle can">
+          </picture>
+        </figure>
+
+        <!-- Center -->
+        <figure class="col-span-4 m-col-span-4 l-col-span-4 hero-card" id="hero-card-center">
+          <picture>
+            <source srcset="images/sq-mobile-home-hero.jpg" media="(max-width: 767px)">
+            <source srcset="images/sq-tablet-product-hero.jpg" media="(max-width: 1199px)">
+            <img src="images/sq-orange-hero.jpg" alt="SqueezeIt Orange Rush can">
+          </picture>
+        </figure>
+
+        <!-- Right -->
+        <figure class="col-span-4 m-col-span-4 l-col-span-4 hero-card" id="hero-card-right">
+          <picture>
+            <source srcset="images/sq-lemon-hero-mobile.jpg" media="(max-width: 767px)">
+            <source srcset="images/sq-tablet-hero.jpg" media="(max-width: 1199px)">
+            <img src="images/sq-lemon-hero.jpg" alt="SqueezeIt Lemon Burst can">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== BIG QUOTED HEADLINE ===== -->
+    <section class="section-hero section-hero--simple" id="hero-headline">
+      <div class="grid-con">
+        <div class="col-span-full">
+          <h2 class="display">“The Bold Taste of SqueezeIt”</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FUN FACTS ===== -->
+    <section class="section-facts section-facts--rows" id="facts">
+      <div class="grid-con">
+        <h2 class="col-span-full" id="facts-title">Fun Fact About Squeezit</h2>
+
+        <!-- Thumbs row -->
+        <div class="col-span-full facts-media">
+          <!-- Strawberry -->
+          <figure class="facts-thumb">
+            <picture>
+              <source srcset="images/fact-berry.jpg" media="(max-width: 767px)">
+              <source srcset="images/fact-berry.jpg" media="(max-width: 1199px)">
+              <img src="images/fact-berry.jpg" alt="Strawberries">
+            </picture>
+          </figure>
+
+          <!-- Orange -->
+          <figure class="facts-thumb">
+            <picture>
+              <source srcset="images/fact-orange.jpg" media="(max-width: 767px)">
+              <source srcset="images/fact-orange.jpg" media="(max-width: 1199px)">
+              <img src="images/fact-orange.jpg" alt="Oranges">
+            </picture>
+          </figure>
+
+          <!-- Lemon -->
+          <figure class="facts-thumb">
+            <picture>
+              <source srcset="images/fact-lemon.jpg" media="(max-width: 767px)">
+              <source srcset="images/fact-lemon.jpg" media="(max-width: 1199px)">
+              <img src="images/fact-lemon.jpg" alt="Lemons">
+            </picture>
+          </figure>
+        </div>
+
+        <!-- Desktop/Tablet static rows -->
+        <div class="col-span-full only-md-up" id="facts-static">
+          <div class="fact-row">
+            <h3>Packed With Real Fruit Flavour</h3>
+            <p>Every can bursts with flavour inspired by real fruits — no boring sips here!</p>
+          </div>
+          <div class="fact-row">
+            <h3>100% Recyclable Cans</h3>
+            <p>Our cans are fully recyclable, so you can enjoy your drink and help the planet.</p>
+          </div>
+          <div class="fact-row">
+            <h3>Flavours For Every Mood</h3>
+            <p>From zesty Lemon Burst to sweet Peach Pop, we’ve got a flavour for every vibe.</p>
+          </div>
+          <div class="fact-row">
+            <h3>Designed To Stand Out</h3>
+            <p>Our colourful cans aren’t just drinks — they’re your accessory for fun days out.</p>
+          </div>
+          <div class="fact-row">
+            <h3>Made For Sharing</h3>
+            <p>SqueezeIt was created for friends, parties, and spontaneous adventures.</p>
+          </div>
+          <div class="fact-row">
+            <h3>A Splash of Play in Every Sip</h3>
+            <p>Our splash-style logo and bright colours match the energy you feel when you crack one open.</p>
+          </div>
+        </div>
+
+        <!-- Mobile accordion rows -->
+        <div class="col-span-full only-mobile" id="facts-accordion"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer site-footer--bar" id="main-footer">
+    <div class="footer-row footer-top">
+      <div class="footer-logo">SQUEEZIT</div>
+      <div class="footer-socials">
+        <img src="images/youtube.svg" alt="YouTube">
+        <img src="images/x.svg" alt="X">
+        <img src="images/facebook.svg" alt="Facebook">
+        <img src="images/instagram.svg" alt="Instagram">
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-row footer-links-wrapper">
+      <div class="footer-info-links">
+        <a href="#">About Squeezeit</a>
+        <a href="#">Contact Info</a>
+      </div>
+      <div class="footer-nav-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html">Products</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Squeezit. All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
